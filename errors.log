@@ -1,0 +1,24 @@
+20230331 00:25:03 INFO  [main] ims.IMS IMS.java50 - Welcome to the Inventory Management System!
+20230331 00:25:03 INFO  [main] ims.IMS IMS.java55 - Which entity would you like to use?
+20230331 00:25:03 INFO  [main] domain.Domain Domain.java27 - CUSTOMER: Information about customers
+20230331 00:25:03 INFO  [main] domain.Domain Domain.java27 - ITEM: Individual Items
+20230331 00:25:03 INFO  [main] domain.Domain Domain.java27 - ORDER: Purchases of items
+20230331 00:25:03 INFO  [main] domain.Domain Domain.java27 - ITEMORDER: Item orders
+20230331 00:25:03 INFO  [main] domain.Domain Domain.java27 - STOP: To close the application
+20230331 00:25:09 INFO  [main] ims.IMS IMS.java89 - What would you like to do with itemorder:
+20230331 00:25:09 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
+20230331 00:25:09 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
+20230331 00:25:09 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
+20230331 00:25:09 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
+20230331 00:25:09 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
+20230331 00:25:14 INFO  [main] controller.ItemOrderController ItemOrderController.java36 - Please enter the orderid: 
+20230331 00:25:16 INFO  [main] controller.ItemOrderController ItemOrderController.java38 - Please enter the item id: 
+20230331 00:25:17 DEBUG [main] dao.ItemOrderDAO ItemOrderDAO.java97 - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`ims`.`itemorder`, CONSTRAINT `orderid` FOREIGN KEY (`orderid`) REFERENCES `order` (`orderid`))
+20230331 00:25:17 ERROR [main] dao.ItemOrderDAO ItemOrderDAO.java98 - Cannot add or update a child row: a foreign key constraint fails (`ims`.`itemorder`, CONSTRAINT `orderid` FOREIGN KEY (`orderid`) REFERENCES `order` (`orderid`))
+20230331 00:25:17 INFO  [main] controller.ItemOrderController ItemOrderController.java42 - Item created
+20230331 00:25:17 INFO  [main] ims.IMS IMS.java89 - What would you like to do with itemorder:
+20230331 00:25:17 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
+20230331 00:25:17 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
+20230331 00:25:17 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
+20230331 00:25:17 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
+20230331 00:25:17 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
